@@ -31,3 +31,4 @@ else:
             output+= char
 
     print(f"Encrypted message: {output}")
+    # this is just a test
