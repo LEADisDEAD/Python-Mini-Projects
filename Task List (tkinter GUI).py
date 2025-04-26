@@ -5,10 +5,15 @@ class ToDoApp:
     def __init__(self,root):
         self.root = root
         self.root.title("To do List app")
-        self.root.geometry("400x400")
+        self.root.geometry("400x420")
 
-        self.label = tk.Label(window, text="To-Do App", font=("Roboto",15,"bold"))
+        self.root.configure(bg="lightblue")
+
+        self.label = tk.Label(window, text="Task Master", font=("Roboto",15,"bold"), background="lightblue")
         self.label.pack(pady=10)
+
+        self.label2 = tk.Label(root, text="Enter task : ",font = ("Roboto",9,"bold"),background="lightblue")
+        self.label2.place(x=40,y=58)
 
         self.task_entry = tk.Entry(root, width=30)
         self.task_entry.pack(pady=10)
